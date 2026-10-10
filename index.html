@@ -817,6 +817,85 @@
     #cookie-banner .cb-actions{ width:100%; }
     #cookie-banner button{ flex:1; }
   }
+
+  /* ════════ RIFINITURA LAYOUT (spazi e allineamenti) ════════ */
+
+  /* Titoli e citazioni: niente parole isolate a fine riga */
+  h1, h2.title, blockquote, .final-cta p.sub{ text-wrap:balance; }
+
+  /* Su desktop i titoli lunghi possono uscire un po' dalla colonna del testo,
+     così non lasciano una parola da sola sull'ultima riga */
+  @media(min-width:900px){
+    h2.title{ margin-left:-70px; margin-right:-70px; }
+  }
+
+  /* Lista di fiducia sotto il primo pulsante: centrata sotto il bottone */
+  .trust-bar{ margin-left:auto; margin-right:auto; width:100%; }
+
+  /* Una sola larghezza per tutte le schede a colonna singola */
+  .container.center > .card,
+  .selection-box,
+  .steps-grid,
+  .faq-list{
+    max-width:640px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+  .container.center > .card + .card{ margin-top:20px !important; }
+
+  /* Box del Metodo e confronto Oggi/Con il metodo: più respiro su desktop */
+  .container:has(.pillars){ max-width:980px; }
+  .container:has(.before-after){ max-width:860px; }
+  .pillars{ gap:20px; }
+  .pillar{ padding:34px 26px 30px; }
+
+  /* Citazione in apertura di sezione: distanza dall'etichetta che segue */
+  .container > blockquote:first-child{ margin-bottom:56px; }
+
+  /* Pulsanti e citazioni dopo le schede: spaziatura uniforme */
+  .container.center > blockquote{ margin:48px auto 40px; }
+
+  /* Form finale: riquadro allineato alle altre schede, campi a tutta larghezza */
+  .final-cta .card{ max-width:640px; padding:40px 40px 34px; }
+  form.lead-form{ max-width:none; gap:14px; }
+  .q-block{ margin-bottom:10px; }
+  .q-options{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .q-options:has(input[value="dipende"]){ grid-template-columns:repeat(3,1fr); }
+  .q-option{ display:block; }
+  .q-option span{ display:flex; align-items:center; justify-content:center; height:100%; text-align:center; border-radius:14px; line-height:1.35; }
+  .q-error{ margin-top:-4px; }
+  .lead-thanks{ padding:10px 6px; }
+
+  @media(max-width:640px){
+    /* Etichette in alto su una riga */
+    .kicker, .eyebrow{
+      letter-spacing:2.4px;
+      font-size:10.5px;
+      padding:8px 18px;
+    }
+    /* Testo sotto il video leggibile, non gigante */
+    .hero p.lead{ font-size:1.08rem; line-height:1.75; }
+    .hero h1{ font-size:2.7rem; }
+    .hero-stack{ gap:30px; }
+    h2.title{ font-size:2.15rem; margin-bottom:24px; }
+    blockquote{ font-size:1.8rem; }
+    .container > blockquote:first-child{ margin-bottom:44px; }
+    .container.center > blockquote{ margin:38px auto 32px; }
+    .pillar{ padding:30px 22px 26px; }
+    .pillars{ gap:16px; }
+    /* Form da telefono */
+    .final-cta .card{ padding:28px 20px 26px; }
+    .q-block legend{ font-size:0.95rem; }
+    .q-option span{ padding:12px 12px; font-size:0.92rem; }
+    /* Da telefono le risposte lunghe vanno una per riga, allineate a sinistra */
+    .q-options{ grid-template-columns:1fr; }
+    .q-options:has(input[value="meno-3"]){ grid-template-columns:1fr 1fr; }
+    .q-options:not(:has(input[value="meno-3"])):not(:has(input[value="dipende"])) .q-option span{
+      justify-content:flex-start;
+      text-align:left;
+      padding:13px 18px;
+    }
+  }
 </style>
 </head>
 <body>
