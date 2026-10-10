@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Martina Sannino | Da operaia verso la libertà</title>
+<meta name="description" content="Da operaia in fabbrica a libertà di tempo e di reddito. La storia vera di Martina Sannino e il Metodo delle 3 Libertà. Candidati per una call conoscitiva gratuita.">
+<link rel="canonical" href="https://martinasannino.com/">
+<link rel="icon" type="image/png" sizes="32x32" href="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/favicon-192.png">
+<link rel="apple-touch-icon" href="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/favicon-192.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://martinasannino.com/">
+<meta property="og:title" content="Martina Sannino | Da operaia verso la libertà">
+<meta property="og:description" content="Da operaia in fabbrica a libertà di tempo e di reddito. La storia vera di Martina Sannino e il Metodo delle 3 Libertà.">
+<meta property="og:image" content="https://martinasannino.com/martina-editorial.jpeg">
+<meta property="og:locale" content="it_IT">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Martina Sannino | Da operaia verso la libertà">
+<meta name="twitter:description" content="Da operaia in fabbrica a libertà di tempo e di reddito. La storia vera di Martina Sannino e il Metodo delle 3 Libertà.">
+<meta name="twitter:image" content="https://martinasannino.com/martina-editorial.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-base:#f2edf5;
+    --bg-base-2:#e6dcee;
+    --terracotta:#7d3c6d;
+    --terracotta-dark:#5c2a51;
+    --wine:#3b2144;
+    --text-light:#150d1c;
+    --text-muted:#2e2138;
+    --gold:#c08bb4;
+    --gold-dark:#6d4166;
+    --card:#ffffff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+
+  body{
+    font-family:'Montserrat', sans-serif;
+    background:var(--bg-base);
+    color:var(--text-light);
+    line-height:1.8;
+    font-weight:300;
+    font-size:18px;
+    letter-spacing:0.2px;
+    position:relative;
+    overflow-x:hidden;
+  }
+
+  /* ── ANIMATED GRADIENT BACKGROUND ── */
+  .bg-motion{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    background:linear-gradient(
+      125deg,
+      #6b3a63 0%,
+      #4e2a4d 16%,
+      #7d3c6d 32%,
+      #3b2144 48%,
+      #8a4a78 64%,
+      #4a2649 80%,
+      #6b3a63 100%
+    );
+    background-size:420% 420%;
+    animation:gradientFlow 24s ease infinite;
+  }
+  @keyframes gradientFlow{
+    0%{ background-position:0% 50%; }
+    50%{ background-position:100% 50%; }
+    100%{ background-position:0% 50%; }
+  }
+
+  h1,h2,h3,.serif{
+    font-family:'Cormorant Garamond', serif;
+    color:#fff;
+    line-height:1.12;
+  }
+  h1{ font-weight:600; letter-spacing:-0.01em; }
+  h2{ font-weight:500; letter-spacing:0.005em; }
+  .card h3, .pillar h3, .step-item h3, .before-after h3{ color:var(--text-light); }
+
+  .container{
+    width:100%;
+    max-width:720px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0 28px;
+  }
+  a{text-decoration:none;}
+  img{max-width:100%; display:block;}
+
+  .nav{
+    padding:26px 0;
+    text-align:center;
+  }
+  .nav-logo{
+    height:62px;
+    width:auto;
+    margin:0 auto;
+  }
+  @media(max-width:640px){
+    .nav-logo{ height:50px; }
+  }
+
+  section{ padding:64px 0; }
+
+  /* highlight styles that make words pop */
+  .hl{
+    background:linear-gradient(180deg, transparent 58%, rgba(192,139,180,0.6) 58%);
+    padding:0 3px;
+  }
+  .hl-strong{
+    color:#f0c674;
+    display:inline-block;
+    line-height:1.3;
+  }
+  .accent{ color:#f0c674; }
+  .wine-txt{ color:var(--wine); }
+
+  .kicker{
+    font-family:'Montserrat', sans-serif;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:11.5px;
+    color:#f0c674;
+    background:transparent;
+    border:1px solid rgba(240,198,116,0.5);
+    font-weight:400;
+    display:inline-block;
+    padding:9px 24px;
+    border-radius:30px;
+    margin-bottom:34px;
+  }
+  .center{ text-align:center; }
+
+  h2.title{
+    font-size:3.1rem;
+    margin-bottom:28px;
+    text-align:center;
+  }
+
+  /* reveal on scroll */
+  .reveal{
+    opacity:0;
+    transform:translateY(26px);
+    transition:opacity .75s ease, transform .75s ease;
+  }
+  .reveal.is-visible{ opacity:1; transform:translateY(0); }
+
+  /* ── HERO ── */
+  .hero{ padding-top:30px; padding-bottom:70px; }
+  .hero .container{ max-width:1020px; }
+  .hero-stack{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:38px;
+  }
+  .hero-text-top{ max-width:720px; }
+  .hero-video-frame{
+    width:100%;
+    max-width:820px;
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid rgba(240,198,116,0.35);
+    box-shadow:0 30px 70px rgba(0,0,0,0.4);
+    background:#000;
+  }
+  .hero-video{
+    display:block;
+    width:100%;
+    height:auto;
+    aspect-ratio:16/9;
+  }
+  .hero-cta{ display:flex; flex-direction:column; align-items:center; }
+  .hero-text{ text-align:left; }
+  .eyebrow{
+    font-family:'Montserrat', sans-serif;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:11.5px;
+    color:#f0c674;
+    background:transparent;
+    border:1px solid rgba(240,198,116,0.5);
+    font-weight:400;
+    display:inline-block;
+    padding:9px 24px;
+    border-radius:30px;
+    margin-bottom:26px;
+  }
+  .hero h1{
+    font-size:4.4rem;
+    margin-bottom:24px;
+  }
+  .hero p.lead{
+    font-size:1.32rem;
+    color:rgba(255,255,255,0.92);
+    max-width:680px;
+    margin:0 auto;
+  }
+  .hero p.lead strong{ color:#fff; font-weight:600; }
+  .cta-btn{
+    display:inline-block;
+    background:#f0c674;
+    color:#2b1a10 !important;
+    padding:21px 44px;
+    border-radius:60px;
+    font-family:'Montserrat', sans-serif;
+    font-size:0.86rem;
+    letter-spacing:2.2px;
+    text-transform:uppercase;
+    font-weight:500;
+    box-shadow:0 16px 34px rgba(0,0,0,0.3);
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .cta-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 22px 44px rgba(0,0,0,0.38);
+  }
+  .cta-sub{
+    display:block;
+    margin-top:16px;
+    font-family:'Montserrat', sans-serif;
+    font-size:0.98rem;
+    letter-spacing:0.5px;
+    color:rgba(255,255,255,0.85);
+    font-weight:500;
+  }
+
+  .trust-bar{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin-top:30px;
+    padding-top:26px;
+    border-top:1px solid rgba(255,255,255,0.16);
+    max-width:520px;
+  }
+  .trust-item{
+    display:flex;
+    align-items:flex-start;
+    text-align:left;
+    gap:10px;
+    font-family:'Montserrat', sans-serif;
+    font-size:0.92rem;
+    line-height:1.5;
+    color:rgba(255,255,255,0.88);
+  }
+  .trust-item .trust-icon{
+    color:#f0c674;
+    font-weight:700;
+    flex-shrink:0;
+    line-height:1.5;
+  }
+  @media(max-width:900px){
+    .trust-bar{ align-items:center; }
+    .trust-item{ text-align:left; max-width:420px; }
+  }
+
+  /* ── CARDS ── */
+  .card{
+    background:var(--card);
+    border-radius:24px;
+    padding:32px 30px;
+    box-shadow:0 10px 34px rgba(43,33,27,0.09);
+  }
+  .card p:last-child{ margin-bottom:0; }
+
+  .split-row{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+  .split-row img{
+    width:170px; height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+    box-shadow:0 14px 32px rgba(43,33,27,0.2);
+  }
+  .split-row .card{ flex:1; min-width:250px; }
+  .split-row p{ margin-bottom:16px; font-size:1.18rem; color:var(--text-muted); }
+  .split-row p strong{ color:var(--text-light); font-weight:600; }
+
+  blockquote{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:2.7rem;
+    line-height:1.32;
+    text-align:center;
+    max-width:660px;
+    margin:38px auto;
+    color:#fff;
+  }
+  .container > blockquote:first-child{ margin-top:0; }
+  .container > blockquote:last-child{ margin-bottom:0; }
+
+  /* ── PILLARS ── */
+  .pillars{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin-top:10px;
+  }
+  .pillar{
+    background:var(--card);
+    border-radius:22px;
+    padding:30px 20px 26px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(43,33,27,0.09);
+    position:relative;
+    overflow:hidden;
+  }
+  .pillar::before{
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0;
+    height:5px;
+    background:var(--terracotta);
+  }
+  .pillar:nth-child(2)::before{ background:var(--gold); }
+  .pillar:nth-child(3)::before{ background:var(--wine); }
+  .pillar .num{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-style:italic;
+    font-size:3.6rem;
+    line-height:1;
+    color:var(--terracotta);
+    opacity:0.35;
+    margin-bottom:4px;
+  }
+  .pillar:nth-child(2) .num{ color:var(--gold-dark); }
+  .pillar:nth-child(3) .num{ color:var(--wine); }
+  .pillar h3{
+    font-family:'Montserrat', sans-serif;
+    font-size:0.86rem;
+    text-transform:uppercase;
+    letter-spacing:2.4px;
+    font-weight:500;
+    margin-bottom:12px;
+    color:var(--text-light);
+  }
+  .pillar > p{ font-size:1.08rem; color:var(--text-muted); }
+  .pillar ul{ list-style:none; margin-top:14px; text-align:left; }
+  .pillar ul li{
+    font-size:1rem;
+    color:var(--text-muted);
+    margin-bottom:9px;
+    padding-left:22px;
+    position:relative;
+  }
+  .pillar ul li::before{
+    content:"✓";
+    position:absolute; left:0;
+    color:var(--terracotta);
+    font-weight:700;
+  }
+
+  /* ── LISTS ── */
+  .check-x-list{ list-style:none; text-align:left; }
+  .check-x-list li{
+    display:block;
+    position:relative;
+    padding-left:32px;
+    margin-bottom:18px;
+    font-size:1.05rem;
+    line-height:1.65;
+    color:var(--text-muted);
+  }
+  .check-x-list li:last-child{ margin-bottom:0; }
+  .check-x-list li .mark{
+    position:absolute;
+    left:0;
+    top:0;
+    font-weight:600;
+    font-size:1.05rem;
+    line-height:1.65;
+  }
+  .check-x-list.yes li .mark{ color:var(--terracotta); }
+  .check-x-list.no li .mark{ color:var(--wine); opacity:0.65; }
+  .check-x-list li strong{ color:var(--text-light); font-weight:600; }
+
+  .before-after{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:10px;
+  }
+  .before-after .col{
+    background:var(--card);
+    border-radius:22px;
+    padding:28px 24px;
+    box-shadow:0 10px 30px rgba(43,33,27,0.09);
+  }
+  .before-after .col.before{ background:#f4eef6; }
+  .before-after .col h3{
+    font-family:'Montserrat', sans-serif;
+    font-size:0.95rem;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:700;
+  }
+  .before-after .col.before h3{ color:var(--wine) !important; }
+  .before-after .col.after h3{ color:var(--terracotta) !important; }
+
+  .selection-box{
+    background:var(--card);
+    border-radius:24px;
+    padding:36px 32px;
+    max-width:620px;
+    margin:0 auto;
+    box-shadow:0 10px 34px rgba(43,33,27,0.09);
+  }
+  .selection-box .divider-line{
+    height:1px;
+    background:rgba(43,33,27,0.12);
+    margin:28px 0;
+  }
+  .check-x-list li strong{ white-space:normal; }
+
+  /* ── STEPS ── */
+  .steps-grid{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    max-width:560px;
+    margin:0 auto;
+  }
+  .step-item{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    text-align:left;
+    background:var(--card);
+    border-radius:20px;
+    padding:22px 24px;
+    box-shadow:0 8px 24px rgba(43,33,27,0.08);
+  }
+  .step-item .step-num{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-style:italic;
+    font-size:2.6rem;
+    line-height:1;
+    color:var(--terracotta);
+    opacity:0.4;
+    min-width:48px;
+  }
+  .step-item h3{ font-size:1.5rem; margin-bottom:4px; font-weight:600; }
+  .step-item p{ color:var(--text-muted); font-size:1.05rem; }
+
+  /* ── REVIEWS ── */
+  .reviews-section .container{ max-width:1080px; }
+  .reviews-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    align-items:stretch;
+  }
+  .reviews-grid .review-card{
+    display:flex;
+    flex-direction:column;
+  }
+  .reviews-grid .review-author{ margin-top:auto; }
+  .review-card{
+    background:var(--card);
+    border-radius:20px;
+    padding:26px 24px;
+    text-align:left;
+    box-shadow:0 8px 26px rgba(43,33,27,0.08);
+  }
+  .review-card .stars{
+    color:var(--gold);
+    font-size:1.05rem;
+    letter-spacing:3px;
+    margin-bottom:12px;
+  }
+  .review-card p.review-quote{
+    font-size:0.98rem;
+    color:var(--text-muted);
+    margin-bottom:20px;
+    line-height:1.7;
+  }
+  .review-card p.review-name{
+    font-family:'Montserrat', sans-serif;
+    font-size:0.78rem;
+    letter-spacing:2.4px;
+    text-transform:uppercase;
+    color:var(--terracotta);
+    font-weight:500;
+  }
+  .review-author{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-top:18px;
+  }
+  .review-author img{
+    width:52px; height:52px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+  }
+  .review-author p.review-name{ margin:0; }
+
+  /* ── FAQ ── */
+  .faq-list{
+    max-width:760px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .faq-item{
+    background:var(--card);
+    border-radius:16px;
+    padding:6px 26px;
+    box-shadow:0 8px 26px rgba(43,33,27,0.06);
+  }
+  .faq-item summary{
+    list-style:none;
+    cursor:pointer;
+    padding:20px 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.35rem;
+    font-weight:600;
+    color:var(--text-light);
+  }
+  .faq-item summary::-webkit-details-marker{ display:none; }
+  .faq-item summary::after{
+    content:'+';
+    font-family:'Montserrat', sans-serif;
+    font-size:1.6rem;
+    font-weight:300;
+    color:var(--terracotta);
+    flex-shrink:0;
+    transition:transform .25s ease;
+  }
+  .faq-item[open] summary::after{ transform:rotate(45deg); }
+  .faq-item .faq-answer{
+    color:var(--text-muted);
+    font-size:1rem;
+    line-height:1.75;
+    padding:0 0 22px;
+  }
+
+  /* ── FINAL CTA ── */
+  .final-cta{ text-align:center; }
+  .final-cta .card{ max-width:560px; margin:0 auto; }
+  .final-cta p.sub{
+    color:rgba(255,255,255,0.92);
+    max-width:470px;
+    margin:0 auto 30px;
+    font-size:1.18rem;
+  }
+  .final-cta p.sub strong{ color:#f0c674; font-weight:600; }
+  form.lead-form{
+    max-width:420px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  form.lead-form input, form.lead-form textarea{
+    padding:16px 18px;
+    border-radius:12px;
+    border:1.5px solid rgba(43,33,27,0.14);
+    background:#fff;
+    font-family:'Montserrat',sans-serif;
+    font-size:1.02rem;
+    color:var(--text-light);
+    transition:border-color .2s ease;
+  }
+  form.lead-form input:focus, form.lead-form textarea:focus{
+    outline:none;
+    border-color:var(--terracotta);
+  }
+  form.lead-form button{
+    background:var(--terracotta);
+    color:#fff;
+    border:none;
+    padding:20px;
+    border-radius:60px;
+    font-family:'Montserrat', sans-serif;
+    font-size:0.86rem;
+    letter-spacing:2.2px;
+    text-transform:uppercase;
+    font-weight:500;
+    cursor:pointer;
+    margin-top:6px;
+    box-shadow:0 14px 30px rgba(125,60,109,0.35);
+    transition:transform .18s ease;
+  }
+  form.lead-form button:hover{ transform:translateY(-2px); }
+
+  /* ── DOMANDE A SCELTA (qualifica candidatura) ── */
+  .q-block{ text-align:left; margin-bottom:6px; border:none; padding:0; }
+  .q-block legend{
+    font-family:'Montserrat',sans-serif;
+    font-size:0.98rem;
+    font-weight:600;
+    color:var(--text-light);
+    margin-bottom:10px;
+    padding:0;
+  }
+  .q-block legend .q-num{ color:var(--terracotta); margin-right:6px; }
+  .q-options{ display:flex; flex-wrap:wrap; gap:8px; }
+  .q-option{ position:relative; }
+  .q-option input{ position:absolute; opacity:0; width:1px; height:1px; pointer-events:none; }
+  .q-option span{
+    display:inline-block;
+    padding:11px 16px;
+    border-radius:40px;
+    border:1.5px solid rgba(43,33,27,0.16);
+    background:#fff;
+    font-family:'Montserrat',sans-serif;
+    font-size:0.92rem;
+    color:var(--text-light);
+    cursor:pointer;
+    user-select:none;
+    transition:border-color .18s ease, background .18s ease, color .18s ease;
+  }
+  .q-option span:hover{ border-color:var(--terracotta); }
+  .q-option input:checked + span{
+    background:var(--terracotta);
+    border-color:var(--terracotta);
+    color:#fff;
+  }
+  .q-option input:focus-visible + span{ outline:2px solid var(--terracotta); outline-offset:2px; }
+  .q-error{
+    display:none;
+    color:#b3261e;
+    font-family:'Montserrat',sans-serif;
+    font-size:0.88rem;
+    text-align:left;
+  }
+  .q-error.is-visible{ display:block; }
+  .lead-thanks{
+    display:none;
+    text-align:center;
+    font-family:'Montserrat',sans-serif;
+    color:var(--text-light);
+    line-height:1.6;
+  }
+  .lead-thanks.is-visible{ display:block; }
+  .lead-thanks h3{ font-size:1.25rem; margin-bottom:10px; color:var(--terracotta-dark); }
+  .scarcity{
+    margin-top:20px;
+    font-family:'Montserrat', sans-serif;
+    font-size:0.95rem;
+    letter-spacing:0.4px;
+    color:var(--terracotta-dark);
+    font-weight:600;
+  }
+
+  .footer-links{ margin-bottom:10px; }
+  .footer-links a{
+    color:rgba(255,255,255,0.85);
+    font-size:0.85rem;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    border-bottom:1px solid rgba(255,255,255,0.35);
+    padding-bottom:2px;
+  }
+  .footer-links a:hover{ color:#f0c674; border-color:#f0c674; }
+  .footer-links .sep{ color:rgba(255,255,255,0.5); margin:0 12px; }
+
+  .privacy-consent{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    text-align:left;
+    margin-top:6px;
+    font-size:0.82rem;
+    line-height:1.6;
+    color:var(--text-muted);
+  }
+  .privacy-consent input{
+    margin-top:5px;
+    width:16px;
+    height:16px;
+    flex-shrink:0;
+    accent-color:var(--terracotta);
+  }
+  .privacy-consent a{
+    color:var(--terracotta);
+    text-decoration:underline;
+  }
+
+  footer{
+    text-align:center;
+    padding:34px 0;
+    font-size:0.95rem;
+    color:rgba(255,255,255,0.7);
+  }
+
+  @media(max-width:900px){
+    .reviews-grid{
+      grid-template-columns:1fr;
+      max-width:620px;
+      margin:0 auto;
+    }
+  }
+  @media(max-width:820px){
+    .hero p.lead{ max-width:520px; }
+  }
+  @media(max-width:640px){
+    body{ font-size:17px; }
+    section{ padding:52px 0; }
+    .container{ padding:0 22px; }
+    .hero h1{ font-size:3rem; }
+    .hero-video-frame{ border-radius:14px; }
+    h2.title{ font-size:2.3rem; }
+    blockquote{ font-size:2rem; margin:28px auto; }
+    .kicker, .eyebrow{ margin-bottom:26px; }
+    .pillars{ grid-template-columns:1fr; }
+    .split-row{ flex-direction:column; text-align:center; gap:26px; }
+    .split-row .card{ width:100%; }
+    .before-after{ grid-template-columns:1fr; }
+    .step-item{
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      gap:8px;
+      padding:26px 22px;
+    }
+    .step-item .step-num{ min-width:auto; }
+    .cta-btn{ padding:19px 32px; font-size:0.8rem; letter-spacing:1.8px; }
+    .selection-box{ padding:30px 24px; }
+    .card{ padding:28px 24px; }
+  }
+
+  /* Effetto parallasse sulle foto */
+  .parallax-photo{
+    transform:scale(1.1);
+    transition:transform .15s ease-out;
+    will-change:transform;
+  }
+  @media(prefers-reduced-motion:reduce){
+    .parallax-photo{ transition:none; transform:none !important; }
+  }
+
+  /* Cookie consent banner */
+  #cookie-banner{
+    position:fixed;
+    left:0; right:0; bottom:0;
+    z-index:9999;
+    background:var(--wine);
+    color:#f4ecf1;
+    padding:22px 24px;
+    box-shadow:0 -6px 24px rgba(0,0,0,0.25);
+    display:none;
+  }
+  #cookie-banner.is-visible{ display:block; }
+  #cookie-banner .cb-inner{
+    max-width:1080px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    flex-wrap:wrap;
+  }
+  #cookie-banner p{
+    margin:0;
+    font-size:0.92rem;
+    line-height:1.6;
+    color:rgba(244,236,241,0.9);
+    max-width:640px;
+  }
+  #cookie-banner a{ color:var(--gold); text-decoration:underline; }
+  #cookie-banner .cb-actions{
+    display:flex;
+    gap:12px;
+    flex-shrink:0;
+    flex-wrap:wrap;
+  }
+  #cookie-banner button{
+    font-family:'Montserrat', sans-serif;
+    font-size:0.78rem;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    border:1px solid rgba(244,236,241,0.4);
+    background:transparent;
+    color:#f4ecf1;
+    transition:all .2s ease;
+  }
+  #cookie-banner button:hover{ background:rgba(244,236,241,0.1); }
+  #cookie-banner button.cb-accept{
+    background:var(--gold);
+    border-color:var(--gold);
+    color:var(--wine);
+    font-weight:600;
+  }
+  #cookie-banner button.cb-accept:hover{ background:#d6a4c8; }
+  @media(max-width:640px){
+    #cookie-banner .cb-inner{ flex-direction:column; align-items:stretch; text-align:left; }
+    #cookie-banner .cb-actions{ width:100%; }
+    #cookie-banner button{ flex:1; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="bg-motion"></div>
+
+  <div class="nav"><img src="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/martina-logo-dark.png" alt="Martina Sannino" class="nav-logo"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-stack">
+      <div class="hero-text-top">
+        <span class="eyebrow">Una storia vera, non un copione</span>
+        <h1>"Sei diventata mamma,<br><span class="accent">sei inaffidabile."</span></h1>
+      </div>
+
+      <div class="hero-video-frame">
+        <video class="hero-video" poster="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/martina-hero-poster.jpg" controls playsinline preload="metadata">
+          <source src="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/martina-hero-video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero-text-top">
+        <p class="lead">Me lo hanno detto mentre mi licenziavano. Ero sola, con un figlio da crescere. Sono finita in un'altra fabbrica e il giorno in cui mio figlio ha imparato ad andare in bicicletta, io non c'ero.<br>L'ho visto in un video su WhatsApp, perché in quel momento stavo lavorando per 10 euro l'ora.<br>Quel giorno ho capito che non volevo più scegliere tra uno stipendio e mio figlio. <strong>Oggi non chiedo più il permesso per vivere la mia vita.</strong> Guarda il video, te lo racconto io.</p>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#form" class="cta-btn">Voglio fare il primo passo</a>
+        <span class="cta-sub">Candidatura gratuita — rispondo personalmente a ognuna</span>
+        <div class="trust-bar">
+          <div class="trust-item"><span class="trust-icon">✓</span> Rispondo io, di persona, a ogni candidatura — non un bot, non un team</div>
+          <div class="trust-item"><span class="trust-icon">✓</span> Nessuna promessa di guadagno garantito: solo un metodo reale, passo dopo passo</div>
+          <div class="trust-item"><span class="trust-icon">✓</span> Storie e volti veri, zero attori: guardale qui sotto</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHI SONO -->
+  <section class="reveal">
+    <div class="container">
+      <div class="center"><span class="kicker">Chi sono</span></div>
+      <div class="split-row">
+        <img src="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/martina-warm.jpeg" alt="Martina Sannino" class="parallax-photo" style="object-position:center 20%;" width="340" height="604" loading="lazy">
+        <div class="card">
+          <p>Sono una persona semplice, che ha passato anni tra turni di notte e la sensazione di <span class="hl">non bastare mai</span> — né come madre, né come lavoratrice.</p>
+          <p>Oggi sto costruendo <strong>qualcosa di mio</strong>. Quello che ho imparato lo metto a disposizione di chi vuole crescere insieme a me: <strong>donne e uomini</strong>, chiunque sia stanco della mentalità dell'8 ore.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LA MIA STORIA -->
+  <section class="reveal">
+    <div class="container">
+      <div class="center"><span class="kicker">La mia storia</span></div>
+      <div class="split-row">
+        <img src="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/martina-raw.jpeg" alt="Martina" class="parallax-photo" width="339" height="605" loading="lazy">
+        <div class="card">
+          <p>Per tre anni ho dato tutta me stessa in una fabbrica, convinta che impegno e sacrifici, prima o poi, sarebbero stati riconosciuti. Poi sono diventata mamma. Lorenzo si ammalava spesso, finiva in ospedale, e io facevo semplicemente quello che farebbe qualsiasi madre: gli stavo accanto. Un giorno mi hanno licenziata con una motivazione che non dimenticherò mai: <strong>"Sei diventata mamma e sei inaffidabile."</strong> In quel momento ho capito che tutto quello che avevo dato non contava più. <span class="hl">Non ero più una persona. Ero diventata un problema.</span></p>
+          <p>Dopo la separazione, per mantenere Lorenzo con dignità, ho accettato un lavoro ancora più pesante: sei giorni su sette, weekend compresi, turni di notte.</p>
+          <p>Una domenica pomeriggio, mentre ero al lavoro, ho ricevuto un video: Lorenzo stava imparando ad andare in bicicletta. <strong>Io non ero lì.</strong> Dentro di me è cresciuta una sola domanda: davvero <strong>10 euro l'ora</strong> valevano il prezzo di perdermi uno dei momenti più belli della sua infanzia?</p>
+        </div>
+      </div>
+      <blockquote>"Desideravo una sola cosa: libertà."</blockquote>
+    </div>
+  </section>
+
+  <!-- MATRICOLA -->
+  <section class="reveal">
+    <div class="container center">
+      <span class="kicker">E ancora oggi</span>
+      <h2 class="title">In fabbrica non sono Martina.<br>Sono la <span class="accent">matricola 8378</span>.</h2>
+      <div class="card" style="max-width:560px; margin:0 auto;">
+        <p style="font-size:1.1rem; color:var(--text-muted);">Il contratto scade e <strong>nessuno ti dice se verrà rinnovato</strong>. Aspetti. Programmi la tua vita tre mesi alla volta. E intanto qualcun altro decide se domani lavori ancora.</p>
+      </div>
+      <blockquote>Io non voglio essere un numero<br>sul badge di qualcun altro.<br><span class="hl-strong">Voglio essere Martina.</span></blockquote>
+      <a href="#form" class="cta-btn">Anche tu sei stanco/a di essere un numero?</a>
+    </div>
+  </section>
+
+  <!-- PUNTO DI SVOLTA -->
+  <section class="reveal">
+    <div class="container center">
+      <span class="kicker">Il punto di non ritorno</span>
+      <h2 class="title">29 ottobre 2025</h2>
+      <div class="card" style="max-width:540px; margin:0 auto;">
+        <p style="font-size:1.12rem; color:var(--text-muted);">Un audio di Lorenzo che piangeva perché voleva la sua mamma. Io non potevo tornare da lui. <strong>Per l'ennesima volta mi sono sentita prigioniera di un lavoro che mi costringeva a rinunciare a quello che contava di più.</strong></p>
+      </div>
+      <blockquote>Quello era il mio limite.<br><span class="hl-strong">Quello era il mio BASTA.</span></blockquote>
+      <a href="#form" class="cta-btn">Ti rivedi in questa storia? Candidati ora</a>
+    </div>
+  </section>
+
+  <!-- METODO -->
+  <section class="reveal">
+    <div class="container">
+      <div class="center">
+        <span class="kicker">Cosa ho costruito</span>
+        <h2 class="title">Il Metodo delle <span class="accent">3 Libertà</span></h2>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="num">01</div>
+          <h3>Libertà di tempo</h3>
+          <p>Orari che scegli tu, non un turno che ti sceglie.</p>
+          <ul>
+            <li>Organizzi la giornata attorno a chi ami</li>
+            <li>Lavori da dove vuoi, con quello che hai già</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <div class="num">02</div>
+          <h3>Libertà economica</h3>
+          <p>Un'entrata online reale, non un contratto.</p>
+          <ul>
+            <li>Un metodo chiaro, passo dopo passo</li>
+            <li>Un'entrata che dipende da te, non da un capo</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <div class="num">03</div>
+          <h3>Libertà d'identità</h3>
+          <p>Tornare a essere te, non solo un ruolo.</p>
+          <ul>
+            <li>Ritrovi fiducia in quello che sai fare</li>
+            <li>Costruisci qualcosa che porta la tua faccia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERCHÉ QUESTA STRADA -->
+  <section class="reveal">
+    <div class="container center">
+      <span class="kicker">Per chi si riconosce in questo</span>
+      <h2 class="title">Le persone arrivano da me<br>per un motivo preciso</h2>
+
+      <div class="card" style="max-width:600px; margin:0 auto 20px; text-align:left;">
+        <h3 style="font-family:'Cormorant Garamond', serif; font-size:1.4rem; margin-bottom:10px; color:var(--text-light);">Di cosa mi occupo oggi?</h3>
+        <p style="font-size:1.05rem; color:var(--text-muted);">Affianco chi vuole <span class="hl">uscire dallo schema turno—stipendio—capo</span> e costruire, un passo alla volta, un'entrata che non dipende da un contratto che qualcun altro può decidere di non rinnovare. Insegno lo stesso metodo che ha cambiato la mia vita: <strong>il Metodo delle 3 Libertà</strong>.</p>
+      </div>
+
+      <div class="card" style="max-width:600px; margin:0 auto; text-align:left;">
+        <h3 style="font-family:'Cormorant Garamond', serif; font-size:1.4rem; margin-bottom:10px; color:var(--text-light);">Perché ho scelto proprio questa strada?</h3>
+        <p style="font-size:1.05rem; color:var(--text-muted);">Perché la <span class="hl">vita tradizionale</span> — turni fissi, un solo stipendio, un capo che decide se domani lavori ancora — non mi ha protetta nemmeno quando ho dato tutta me stessa. Non volevo più aspettare il permesso di qualcun altro per vivere la mia vita. <strong>Ho scelto un modello dove il risultato dipende da me, non da un rinnovo di contratto.</strong></p>
+      </div>
+
+      <a href="#form" class="cta-btn" style="margin-top:32px;">Sei stanco/a della vita tradizionale? Candidati</a>
+    </div>
+  </section>
+
+  <!-- PRIMA / DOPO -->
+  <section class="reveal">
+    <div class="container">
+      <blockquote>"Il punto di partenza non lo scegli tu.<br>Quello di arrivo, <span class="accent">sì</span>."</blockquote>
+      <div class="center">
+        <span class="kicker">Cosa cambia davvero</span>
+        <h2 class="title">Da una vita a turni,<br>a una vita <span class="accent">scelta</span></h2>
+      </div>
+      <div class="before-after">
+        <div class="col before">
+          <h3>Oggi</h3>
+          <ul class="check-x-list no">
+            <li><span class="mark">✕</span> Le giornate le decide il turno, non tu</li>
+            <li><span class="mark">✕</span> Ogni ora extra è tempo tolto a chi ami</li>
+            <li><span class="mark">✕</span> Un solo stipendio, nessun margine</li>
+          </ul>
+        </div>
+        <div class="col after">
+          <h3>Con il metodo</h3>
+          <ul class="check-x-list yes">
+            <li><span class="mark">✓</span> Decidi tu quando e come lavorare</li>
+            <li><span class="mark">✓</span> Il tempo libero torna a essere tuo</li>
+            <li><span class="mark">✓</span> Un'entrata in più, costruita passo dopo passo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELEZIONE -->
+  <section class="reveal">
+    <div class="container">
+      <div class="center">
+        <span class="kicker">Attenzione: non è per tutti</span>
+        <h2 class="title">È una <span class="accent">selezione</span>,<br>non un corso aperto a tutti</h2>
+      </div>
+      <div class="selection-box">
+        <ul class="check-x-list yes">
+          <li><span class="mark">✓</span> Sei stanco/a di scegliere tra <strong>il lavoro e la tua vita</strong></li>
+          <li><span class="mark">✓</span> Vuoi costruire <strong>un'entrata vera</strong>, un passo alla volta</li>
+          <li><span class="mark">✓</span> Sei disposto/a a metterci <strong>la faccia e il tempo</strong></li>
+        </ul>
+        <div class="divider-line"></div>
+        <ul class="check-x-list no">
+          <li><span class="mark">✕</span> Cerchi un modo per arricchirti senza muovere un dito</li>
+          <li><span class="mark">✕</span> Non sei disposto/a a imparare qualcosa di nuovo</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENSIONI -->
+  <section class="reveal reviews-section">
+    <div class="container">
+      <div class="center">
+        <span class="kicker">Chi ha già iniziato</span>
+        <h2 class="title">Le loro parole</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-quote">"Prima di conoscerti avevo tante cose per la testa, ma tu mi hai fatto avere una visione diversa su tante cose. Da quando lavoro con te è cambiato il mio modo di affrontare le cose, grazie ai tuoi consigli e alla tua energia. A una persona che oggi si trova dove ero io, consiglierei sicuramente di parlare con te."</p>
+          <div class="review-author">
+            <img src="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/recensione-giuseppe.jpeg" alt="Giuseppe Lo Presti" width="52" height="52" loading="lazy">
+            <p class="review-name">Giuseppe Lo Presti</p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-quote">"C'è sempre stata empatia dal primo momento che ci siamo incontrate. Confrontarmi con te mi aiuta a crescere sia a livello personale che professionale: sai come aiutare e allo stesso tempo spronare. A chi si trova dove ero io direi che è in buone mani, che deve credere in sé stessa e affidarsi."</p>
+          <div class="review-author">
+            <img src="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/recensione-erika.jpeg" alt="Erika Dominici" width="52" height="52" loading="lazy">
+            <p class="review-name">Erika Dominici</p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-quote">"Prima di conoscerti ero una persona chiusa. Da quando ti seguo ho notato un cambiamento radicale in te, e tutto quello che impari cerchi di trasmetterlo agli altri. Mi hai migliorata in tanti aspetti: dove un tempo avrei reagito piangendo e chiudendomi a riccio, tu mi hai spronata. Grazie."</p>
+          <div class="review-author">
+            <img src="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/recensione-veronica.jpeg" alt="Veronica M." width="52" height="52" loading="lazy">
+            <p class="review-name">Veronica M.</p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-quote">"Il cambiamento l'ho visto in te. Mesi fa eri una persona provata emotivamente, un castello di sabbia che si stava sgretolando lentamente. Oggi invece hai riacquistato luce, forza e determinazione: sorridi e guardi avanti con entusiasmo. Il tempo alla lunga risponde sempre, ma sta a noi trovare il modo per uscire da dove siamo — restare fermi non risolve nulla. Se posso dare un consiglio: provate una via nuova, perché quelle comuni ormai sono intasate."</p>
+          <div class="review-author">
+            <img src="https://martina-sannino-funnel-8hqqkh9un-trovalatuapace.vercel.app/recensione-stefano.jpeg" alt="Stefano Torrini" width="52" height="52" loading="lazy">
+            <p class="review-name">Stefano Torrini</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COME FUNZIONA -->
+  <section class="reveal">
+    <div class="container">
+      <div class="center">
+        <span class="kicker">Come funziona</span>
+        <h2 class="title">Quattro passi,<br>semplici e chiari</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-item">
+          <span class="step-num">01</span>
+          <div>
+            <h3>Ti candidi</h3>
+            <p>Compili il form qui sotto: mi racconti chi sei e la tua situazione oggi.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <span class="step-num">02</span>
+          <div>
+            <h3>Leggo la tua candidatura</h3>
+            <p>Rispondo personalmente su WhatsApp, di solito entro 24 ore.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <span class="step-num">03</span>
+          <div>
+            <h3>Facciamo una call conoscitiva</h3>
+            <p>15 minuti per capire la tua situazione e se il percorso fa per te.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <span class="step-num">04</span>
+          <div>
+            <h3>Iniziamo insieme</h3>
+            <p>Se ci siamo scelti a vicenda, partiamo con Il Metodo delle 3 Libertà.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="reveal">
+    <div class="container">
+      <div class="center">
+        <span class="kicker">Domande frequenti</span>
+        <h2 class="title">Prima di candidarti,<br>rispondo alle domande più comuni</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Devo avere già esperienza o competenze specifiche?</summary>
+          <p class="faq-answer">No. Il percorso è pensato per chi parte da una situazione difficile, non da chi ha già tutto risolto. Si parte da dove sei, passo dopo passo.</p>
+        </details>
+        <details class="faq-item">
+          <summary>È una promessa di guadagno garantito?</summary>
+          <p class="faq-answer">No, e diffida di chi te lo promette. È un percorso di formazione e affiancamento: i risultati dipendono dal tuo impegno e dalla tua situazione personale, non sono garantiti né uguali per tutti.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Cosa succede dopo che mi candido?</summary>
+          <p class="faq-answer">Leggo personalmente la tua candidatura e ti rispondo su WhatsApp, di solito entro 24 ore. Se ci sono le condizioni, facciamo una call conoscitiva gratuita di 15 minuti per capire se il percorso fa per te.</p>
+        </details>
+        <details class="faq-item">
+          <summary>La candidatura è a pagamento?</summary>
+          <p class="faq-answer">No, candidarti e la call conoscitiva sono completamente gratuite. Serve solo a capire, insieme, se ha senso lavorare fianco a fianco.</p>
+        </details>
+        <details class="faq-item">
+          <summary>È un percorso solo per donne?</summary>
+          <p class="faq-answer">No. Il metodo è pensato per chiunque — donna o uomo — si senta bloccato in una situazione lavorativa che non rispecchia il proprio valore.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Devo dedicarci tantissimo tempo, anche se lavoro o ho famiglia?</summary>
+          <p class="faq-answer">Il percorso si adatta ai tuoi impegni reali: ne parliamo apertamente nella call conoscitiva, così sai esattamente cosa aspettarti prima di iniziare.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINALE -->
+  <section class="final-cta reveal" id="form">
+    <div class="container">
+      <span class="kicker">Il primo passo</span>
+      <h2 class="title">Perché hai lavorato così tanto,<br>per guadagnarci <span class="accent">così poco?</span></h2>
+      <p class="sub">Candidati per una call gratuita di 15 minuti: parliamo della tua situazione e capiamo insieme se <strong>questo percorso fa per te</strong>.</p>
+      <div class="card">
+        <form class="lead-form" id="lead-form">
+          <fieldset class="q-block">
+            <legend><span class="q-num">1.</span>Qual è la tua situazione oggi?</legend>
+            <div class="q-options">
+              <label class="q-option"><input type="radio" name="q-situazione" value="dipendente"><span>Lavoro come dipendente</span></label>
+              <label class="q-option"><input type="radio" name="q-situazione" value="autonoma"><span>Sono autonomo/a o libero/a professionista</span></label>
+              <label class="q-option"><input type="radio" name="q-situazione" value="studente"><span>Studio</span></label>
+              <label class="q-option"><input type="radio" name="q-situazione" value="cerca-lavoro"><span>Sono in cerca di lavoro</span></label>
+              <label class="q-option"><input type="radio" name="q-situazione" value="pensione"><span>Sono in pensione</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q-block">
+            <legend><span class="q-num">2.</span>Quanto tempo potresti dedicarci a settimana?</legend>
+            <div class="q-options">
+              <label class="q-option"><input type="radio" name="q-tempo" value="meno-3"><span>Meno di 3 ore</span></label>
+              <label class="q-option"><input type="radio" name="q-tempo" value="3-5"><span>3–5 ore</span></label>
+              <label class="q-option"><input type="radio" name="q-tempo" value="5-10"><span>5–10 ore</span></label>
+              <label class="q-option"><input type="radio" name="q-tempo" value="10-piu"><span>Più di 10 ore</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q-block">
+            <legend><span class="q-num">3.</span>Perché ti interessa?</legend>
+            <div class="q-options">
+              <label class="q-option"><input type="radio" name="q-motivo" value="arrotondare"><span>Arrotondare lo stipendio</span></label>
+              <label class="q-option"><input type="radio" name="q-motivo" value="sostituire"><span>Sostituire lo stipendio</span></label>
+              <label class="q-option"><input type="radio" name="q-motivo" value="famiglia"><span>Più tempo per la famiglia</span></label>
+              <label class="q-option"><input type="radio" name="q-motivo" value="curiosita"><span>Sono solo curioso/a</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q-block">
+            <legend><span class="q-num">4.</span>Sei disposto/a a investire nella tua formazione per partire?</legend>
+            <div class="q-options">
+              <label class="q-option"><input type="radio" name="q-investimento" value="si"><span>Sì</span></label>
+              <label class="q-option"><input type="radio" name="q-investimento" value="dipende"><span>Dipende</span></label>
+              <label class="q-option"><input type="radio" name="q-investimento" value="no"><span>No</span></label>
+            </div>
+          </fieldset>
+          <p class="q-error" id="lf-q-error">Rispondi a tutte e 4 le domande per continuare.</p>
+          <input type="text" id="lf-nome" placeholder="Il tuo nome" required>
+          <input type="email" id="lf-email" placeholder="La tua email" required>
+          <input type="tel" id="lf-telefono" placeholder="Il tuo numero WhatsApp" required>
+          <textarea id="lf-messaggio" placeholder="In poche parole, qual è la tua situazione oggi e perché vuoi cambiare?" required rows="3"></textarea>
+          <label class="privacy-consent">
+            <input type="checkbox" id="lf-consenso" required>
+            <span>Ho letto e accetto la <a href="privacy.html" target="_blank">Privacy Policy</a> e acconsento al trattamento dei miei dati per essere ricontattato/a in merito alla candidatura.</span>
+          </label>
+          <button type="submit">Invia la candidatura su WhatsApp</button>
+        </form>
+        <div class="lead-thanks" id="lead-thanks">
+          <h3>Grazie per la sincerità!</h3>
+          <p>Da quello che mi racconti, in questo momento il percorso non è la scelta giusta per te: richiede tempo da dedicarci ogni settimana e la voglia di investire su di te.</p>
+          <p>Se la tua situazione cambia, torna pure a trovarmi: le porte restano aperte.</p>
+        </div>
+        <p class="scarcity">Posti limitati ogni settimana — rispondo personalmente a ogni candidatura.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <span class="sep">·</span>
+      <a href="termini.html">Termini e Condizioni</a>
+      <span class="sep">·</span>
+      <a href="cookie.html">Cookie Policy</a>
+    </div>
+    <p>&copy; Martina Sannino — Tutti i diritti riservati</p>
+  </footer>
+
+  <div id="cookie-banner">
+    <div class="cb-inner">
+      <p>Usiamo cookie tecnici necessari al funzionamento del sito e, solo con il tuo consenso, cookie di marketing (Meta Pixel) per mostrarti pubblicità pertinente. Leggi la <a href="cookie.html" target="_blank">Cookie Policy</a>.</p>
+      <div class="cb-actions">
+        <button type="button" class="cb-reject" id="cb-reject">Rifiuta</button>
+        <button type="button" class="cb-accept" id="cb-accept">Accetta tutti</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Reveal sections on scroll
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Form candidatura -> invio diretto su WhatsApp a Martina
+    (function(){
+      const WHATSAPP_NUMBER = '393477760839'; // +39 347 776 0839
+      const form = document.getElementById('lead-form');
+      if(!form) return;
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+
+        // Risposte alle 4 domande a scelta
+        function scelta(nome){
+          const el = form.querySelector('input[name="' + nome + '"]:checked');
+          return el ? { valore: el.value, testo: el.nextElementSibling.textContent.trim() } : null;
+        }
+        const situazione = scelta('q-situazione');
+        const tempo = scelta('q-tempo');
+        const motivo = scelta('q-motivo');
+        const investimento = scelta('q-investimento');
+        const qError = document.getElementById('lf-q-error');
+        if(!situazione || !tempo || !motivo || !investimento){
+          qError.classList.add('is-visible');
+          qError.scrollIntoView({ behavior:'smooth', block:'center' });
+          return;
+        }
+        qError.classList.remove('is-visible');
+
+        // Candidatura in target: lavora (dipendente o autonomo/a), almeno 3 ore a settimana, aperto/a a investire
+        const qualificato =
+          (situazione.valore === 'dipendente' || situazione.valore === 'autonoma') &&
+          tempo.valore !== 'meno-3' &&
+          investimento.valore !== 'no';
+
+        const risposte = {
+          situazione: situazione.valore,
+          tempo: tempo.valore,
+          motivo: motivo.valore,
+          investimento: investimento.valore
+        };
+
+        if(!qualificato){
+          // Non è un contatto in target: niente WhatsApp e niente evento Lead,
+          // così Meta non impara a cercare persone simili.
+          if(window.fbq){ window.fbq('trackCustom', 'CandidaturaNonInTarget', risposte); }
+          form.style.display = 'none';
+          const thanks = document.getElementById('lead-thanks');
+          thanks.classList.add('is-visible');
+          thanks.scrollIntoView({ behavior:'smooth', block:'center' });
+          return;
+        }
+
+        const nome = document.getElementById('lf-nome').value.trim();
+        const email = document.getElementById('lf-email').value.trim();
+        const telefono = document.getElementById('lf-telefono').value.trim();
+        const messaggio = document.getElementById('lf-messaggio').value.trim();
+
+        const testo =
+          'Ciao Martina, sono ' + nome + '.\n' +
+          'Vorrei candidarmi per la call gratuita.\n\n' +
+          'Email: ' + email + '\n' +
+          'Telefono: ' + telefono + '\n\n' +
+          'Situazione: ' + situazione.testo + '\n' +
+          'Tempo a settimana: ' + tempo.testo + '\n' +
+          'Perché mi interessa: ' + motivo.testo + '\n' +
+          'Disposto/a a investire: ' + investimento.testo + '\n\n' +
+          'La mia situazione: ' + messaggio;
+
+        const waUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(testo);
+
+        // Evento di conversione per Meta Ads, SOLO per candidature in target
+        // (si attiva solo se l'utente ha accettato i cookie di marketing)
+        if(window.fbq){
+          const eventId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : ('lead_' + Date.now() + '_' + Math.random().toString(36).slice(2));
+
+          // Pixel lato browser (client-side)
+          window.fbq('track', 'Lead', {}, { eventID: eventId });
+
+          // Conversions API lato server, stesso eventId per la deduplica su Meta.
+          // Non blocca mai l'apertura di WhatsApp: se fallisce, la candidatura parte comunque.
+          fetch('/api/lead', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              email: email,
+              phone: telefono,
+              eventId: eventId,
+              eventSourceUrl: window.location.href
+            })
+          }).catch(function(){});
+        }
+
+        window.open(waUrl, '_blank');
+      });
+    })();
+
+    // Effetto parallasse sulle foto: seguono il mouse su desktop, si muovono con lo scroll ovunque
+    (function(){
+      const photos = Array.from(document.querySelectorAll('.parallax-photo'));
+      if(!photos.length) return;
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(reduceMotion) return;
+      const hasMouse = window.matchMedia('(pointer: fine)').matches;
+
+      let mouseX = 0, mouseY = 0, ticking = false;
+
+      function applyTransforms(){
+        const vh = window.innerHeight;
+        photos.forEach(function(img){
+          const rect = img.getBoundingClientRect();
+          const centerY = rect.top + rect.height / 2;
+          // scostamento rispetto al centro dello schermo -> movimento verticale in scroll
+          const scrollOffset = ((centerY - vh / 2) / vh) * 18; // px
+          const mx = hasMouse ? mouseX * 10 : 0;
+          const my = hasMouse ? mouseY * 10 : 0;
+          img.style.transform = 'scale(1.1) translate3d(' + mx.toFixed(1) + 'px, ' + (my - scrollOffset).toFixed(1) + 'px, 0)';
+        });
+        ticking = false;
+      }
+
+      function requestTick(){
+        if(!ticking){ requestAnimationFrame(applyTransforms); ticking = true; }
+      }
+
+      if(hasMouse){
+        window.addEventListener('mousemove', function(e){
+          mouseX = (e.clientX / window.innerWidth - 0.5) * 2;  // -1 .. 1
+          mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+          requestTick();
+        }, { passive:true });
+      }
+      window.addEventListener('scroll', requestTick, { passive:true });
+      window.addEventListener('resize', requestTick);
+      requestTick();
+    })();
+
+    // Cookie consent + Meta Pixel gating
+    (function(){
+      const CONSENT_KEY = 'ms_cookie_consent'; // 'accepted' | 'rejected'
+      const banner = document.getElementById('cookie-banner');
+      const btnAccept = document.getElementById('cb-accept');
+      const btnReject = document.getElementById('cb-reject');
+
+      const META_PIXEL_ID = '1076662848396023';
+
+      function loadMetaPixel(){
+        if(!META_PIXEL_ID || META_PIXEL_ID.indexOf('INSERISCI') === 0) return; // placeholder non ancora impostato
+        if(window.fbq) return; // già caricato
+        !function(f,b,e,v,n,t,s){
+          if(f.fbq)return; n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0';
+          n.queue=[]; t=b.createElement(e); t.async=!0;
+          t.src=v; s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)
+        }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        window.fbq('init', META_PIXEL_ID);
+        window.fbq('track', 'PageView');
+      }
+
+      const saved = localStorage.getItem(CONSENT_KEY);
+      if(saved === 'accepted'){
+        loadMetaPixel();
+      } else if(saved !== 'rejected'){
+        banner.classList.add('is-visible');
+      }
+
+      btnAccept.addEventListener('click', function(){
+        localStorage.setItem(CONSENT_KEY, 'accepted');
+        banner.classList.remove('is-visible');
+        loadMetaPixel();
+      });
+
+      btnReject.addEventListener('click', function(){
+        localStorage.setItem(CONSENT_KEY, 'rejected');
+        banner.classList.remove('is-visible');
+      });
+    })();
+  </script>
+
+</body>
+</html>
