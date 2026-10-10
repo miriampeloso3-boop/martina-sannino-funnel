@@ -820,6 +820,108 @@
 
   /* ════════ RIFINITURA LAYOUT (spazi e allineamenti) ════════ */
 
+  /* ── RECENSIONI A CAROSELLO (scorrono in orizzontale) ── */
+  .reviews-section .container{ max-width:900px; }
+  .reviews-grid{
+    display:flex !important;
+    gap:18px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    padding:6px 2px 14px;
+    max-width:none !important;
+    align-items:stretch !important;
+  }
+  .reviews-grid::-webkit-scrollbar{ display:none; }
+  .reviews-grid .review-card{
+    flex:0 0 calc(50% - 9px);
+    scroll-snap-align:start;
+  }
+  /* recensioni lunghe tagliate a 6 righe, con "Leggi tutta" */
+  .review-card p.review-quote{
+    display:-webkit-box;
+    -webkit-line-clamp:6;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    margin-bottom:8px;
+  }
+  .review-card.is-open p.review-quote{ -webkit-line-clamp:unset; display:block; }
+  .review-more{
+    align-self:flex-start;
+    background:none;
+    border:none;
+    padding:0;
+    margin-bottom:6px;
+    font-family:'Montserrat',sans-serif;
+    font-size:0.85rem;
+    font-weight:600;
+    color:var(--terracotta);
+    text-decoration:underline;
+    cursor:pointer;
+  }
+
+  /* ── DOMANDE FREQUENTI A CAROSELLO (stessa logica delle recensioni) ── */
+  .container:has(.faq-list){ max-width:900px; }
+  .faq-list{
+    display:flex !important;
+    flex-direction:row !important;
+    gap:18px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    padding:6px 2px 14px;
+    max-width:none !important;
+    align-items:stretch;
+  }
+  .faq-list::-webkit-scrollbar{ display:none; }
+  .faq-list .faq-item{
+    flex:0 0 calc(50% - 9px);
+    scroll-snap-align:start;
+    padding:8px 26px 6px;
+  }
+  /* nel carosello domanda e risposta sono sempre visibili: niente "+" da aprire */
+  .faq-list .faq-item summary{ cursor:default; pointer-events:none; padding:20px 0 10px; }
+  .faq-list .faq-item summary::after{ display:none; }
+  .reviews-nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    margin-top:18px;
+  }
+  .reviews-arrow{
+    width:44px; height:44px;
+    border-radius:50%;
+    border:1px solid rgba(240,198,116,0.6);
+    background:transparent;
+    color:#f0c674;
+    font-size:1.2rem;
+    line-height:1;
+    cursor:pointer;
+    transition:background .2s ease, opacity .2s ease;
+  }
+  .reviews-arrow:hover{ background:rgba(240,198,116,0.15); }
+  .reviews-arrow:disabled{ opacity:0.35; cursor:default; background:transparent; }
+  .reviews-dots{ display:flex; gap:8px; }
+  .reviews-dots button{
+    width:8px; height:8px;
+    border-radius:50%;
+    border:none;
+    padding:0;
+    background:rgba(255,255,255,0.35);
+    cursor:pointer;
+    transition:background .2s ease, transform .2s ease;
+  }
+  .reviews-dots button.is-active{ background:#f0c674; transform:scale(1.3); }
+  @media(max-width:900px){
+    .reviews-grid .review-card,
+    .faq-list .faq-item{ flex-basis:86%; }
+  }
+
   /* Titoli e citazioni: niente parole isolate a fine riga */
   h1, h2.title, blockquote, .final-cta p.sub{ text-wrap:balance; }
 
@@ -835,8 +937,7 @@
   /* Una sola larghezza per tutte le schede a colonna singola */
   .container.center > .card,
   .selection-box,
-  .steps-grid,
-  .faq-list{
+  .steps-grid{
     max-width:640px !important;
     margin-left:auto !important;
     margin-right:auto !important;
@@ -1141,6 +1242,11 @@
           </div>
         </div>
       </div>
+      <div class="reviews-nav" aria-label="Scorri le recensioni">
+        <button type="button" class="reviews-arrow" id="reviews-prev" aria-label="Recensione precedente">&#8592;</button>
+        <div class="reviews-dots" id="reviews-dots"></div>
+        <button type="button" class="reviews-arrow" id="reviews-next" aria-label="Recensione successiva">&#8594;</button>
+      </div>
     </div>
   </section>
 
@@ -1192,30 +1298,35 @@
         <h2 class="title">Prima di candidarti,<br>rispondo alle domande più comuni</h2>
       </div>
       <div class="faq-list">
-        <details class="faq-item">
+        <details class="faq-item" open>
           <summary>Devo avere già esperienza o competenze specifiche?</summary>
           <p class="faq-answer">No. Il percorso è pensato per chi parte da una situazione difficile, non da chi ha già tutto risolto. Si parte da dove sei, passo dopo passo.</p>
         </details>
-        <details class="faq-item">
+        <details class="faq-item" open>
           <summary>È una promessa di guadagno garantito?</summary>
           <p class="faq-answer">No, e diffida di chi te lo promette. È un percorso di formazione e affiancamento: i risultati dipendono dal tuo impegno e dalla tua situazione personale, non sono garantiti né uguali per tutti.</p>
         </details>
-        <details class="faq-item">
+        <details class="faq-item" open>
           <summary>Cosa succede dopo che mi candido?</summary>
           <p class="faq-answer">Leggo personalmente la tua candidatura e ti rispondo su WhatsApp, di solito entro 24 ore. Se ci sono le condizioni, facciamo una call conoscitiva gratuita di 15 minuti per capire se il percorso fa per te.</p>
         </details>
-        <details class="faq-item">
+        <details class="faq-item" open>
           <summary>La candidatura è a pagamento?</summary>
           <p class="faq-answer">No, candidarti e la call conoscitiva sono completamente gratuite. Serve solo a capire, insieme, se ha senso lavorare fianco a fianco.</p>
         </details>
-        <details class="faq-item">
+        <details class="faq-item" open>
           <summary>È un percorso solo per donne?</summary>
           <p class="faq-answer">No. Il metodo è pensato per chiunque — donna o uomo — si senta bloccato in una situazione lavorativa che non rispecchia il proprio valore.</p>
         </details>
-        <details class="faq-item">
+        <details class="faq-item" open>
           <summary>Devo dedicarci tantissimo tempo, anche se lavoro o ho famiglia?</summary>
           <p class="faq-answer">Il percorso si adatta ai tuoi impegni reali: ne parliamo apertamente nella call conoscitiva, così sai esattamente cosa aspettarti prima di iniziare.</p>
         </details>
+      </div>
+      <div class="reviews-nav" aria-label="Scorri le domande">
+        <button type="button" class="reviews-arrow" id="faq-prev" aria-label="Domanda precedente">&#8592;</button>
+        <div class="reviews-dots" id="faq-dots"></div>
+        <button type="button" class="reviews-arrow" id="faq-next" aria-label="Domanda successiva">&#8594;</button>
       </div>
     </div>
   </section>
@@ -1411,6 +1522,89 @@
         window.open(waUrl, '_blank');
       });
     })();
+
+    // Caroselli (recensioni e domande frequenti): frecce, pallini e scorrimento automatico
+    // che si ferma appena la persona interagisce
+    function creaCarosello(trackSel, cardSel, prevId, nextId, dotsId, etichetta){
+      const track = document.querySelector(trackSel);
+      const prev = document.getElementById(prevId);
+      const next = document.getElementById(nextId);
+      const dotsBox = document.getElementById(dotsId);
+      if(!track || !prev || !next || !dotsBox) return;
+      const cards = Array.from(track.querySelectorAll(cardSel));
+      if(!cards.length) return;
+
+      const dots = cards.map(function(_, i){
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Vai alla ' + etichetta + ' ' + (i + 1));
+        b.addEventListener('click', function(){ stopAuto(); goTo(i); });
+        dotsBox.appendChild(b);
+        return b;
+      });
+
+      function step(){ return cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : track.clientWidth; }
+      function maxIndex(){
+        const visibili = Math.max(1, Math.round(track.clientWidth / step()));
+        return Math.max(0, cards.length - visibili);
+      }
+      function current(){ return Math.min(maxIndex(), Math.round(track.scrollLeft / step())); }
+      function goTo(i){
+        const target = Math.max(0, Math.min(i, maxIndex()));
+        track.scrollTo({ left: target * step(), behavior:'smooth' });
+        update(target); // aggiorna subito pallini e frecce, senza aspettare la fine dello scorrimento
+      }
+      function update(forced){
+        const i = (typeof forced === 'number') ? forced : current(), m = maxIndex();
+        dots.forEach(function(d, k){ d.classList.toggle('is-active', k === i); d.style.display = k > m ? 'none' : ''; });
+        prev.disabled = i <= 0;
+        next.disabled = i >= m;
+      }
+
+      prev.addEventListener('click', function(){ stopAuto(); goTo(current() - 1); });
+      next.addEventListener('click', function(){ stopAuto(); goTo(current() + 1); });
+      let t = null;
+      track.addEventListener('scroll', function(){ clearTimeout(t); t = setTimeout(function(){ update(); }, 120); }, { passive:true });
+      window.addEventListener('resize', function(){ update(); });
+
+      // Scorrimento automatico ogni 6 secondi, solo quando le recensioni sono visibili
+      let auto = null, visibile = false;
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function startAuto(){
+        if(reduce || auto) return;
+        auto = setInterval(function(){
+          if(!visibile) return;
+          const i = current();
+          goTo(i >= maxIndex() ? 0 : i + 1);
+        }, 6000);
+      }
+      function stopAuto(){ clearInterval(auto); auto = null; }
+      ['pointerdown', 'touchstart', 'wheel'].forEach(function(ev){
+        track.addEventListener(ev, stopAuto, { passive:true });
+      });
+      new IntersectionObserver(function(entries){
+        visibile = entries[0].isIntersecting;
+      }, { threshold:0.4 }).observe(track);
+
+      update();
+      startAuto();
+    }
+    // "Leggi tutta" solo sulle recensioni che superano le 6 righe
+    document.querySelectorAll('.review-card').forEach(function(card){
+      const q = card.querySelector('.review-quote');
+      if(!q || q.scrollHeight <= q.clientHeight + 2) return;
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'review-more';
+      b.textContent = 'Leggi tutta';
+      b.addEventListener('click', function(){
+        const aperta = card.classList.toggle('is-open');
+        b.textContent = aperta ? 'Mostra meno' : 'Leggi tutta';
+      });
+      q.insertAdjacentElement('afterend', b);
+    });
+    creaCarosello('.reviews-grid', '.review-card', 'reviews-prev', 'reviews-next', 'reviews-dots', 'recensione');
+    creaCarosello('.faq-list', '.faq-item', 'faq-prev', 'faq-next', 'faq-dots', 'domanda');
 
     // Effetto parallasse sulle foto: seguono il mouse su desktop, si muovono con lo scroll ovunque
     (function(){
