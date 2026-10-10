@@ -996,6 +996,28 @@
       text-align:left;
       padding:13px 18px;
     }
+
+    /* Racconti lunghi ("Chi sono", "La mia storia"): testo allineato a sinistra, più leggibile */
+    .split-row .card{ text-align:left; }
+
+    /* Titoli: da telefono gli a-capo forzati lasciavano parole sole sull'ultima riga */
+    h2.title br{ display:none; }
+
+    /* "Quattro passi": numero a sinistra e testo a destra, schede più basse */
+    .step-item{
+      flex-direction:row;
+      align-items:center;
+      text-align:left;
+      gap:16px;
+      padding:20px 20px;
+    }
+    .step-item .step-num{ font-size:2.2rem; min-width:40px; }
+    .step-item h3{ font-size:1.35rem; }
+    .step-item p{ font-size:0.98rem; line-height:1.55; }
+
+    /* Footer: link uno per riga, senza puntini che restano a inizio riga */
+    .footer-links{ display:flex; flex-direction:column; gap:10px; align-items:center; margin-bottom:16px; }
+    .footer-links .sep{ display:none; }
   }
 </style>
 </head>
@@ -1069,7 +1091,7 @@
   <section class="reveal">
     <div class="container center">
       <span class="kicker">E ancora oggi</span>
-      <h2 class="title">In fabbrica non sono Martina.<br>Sono la <span class="accent">matricola 8378</span>.</h2>
+      <h2 class="title">In fabbrica non sono Martina. <br>Sono la <span class="accent">matricola 8378</span>.</h2>
       <div class="card" style="max-width:560px; margin:0 auto;">
         <p style="font-size:1.1rem; color:var(--text-muted);">Il contratto scade e <strong>nessuno ti dice se verrà rinnovato</strong>. Aspetti. Programmi la tua vita tre mesi alla volta. E intanto qualcun altro decide se domani lavori ancora.</p>
       </div>
@@ -1134,7 +1156,7 @@
   <section class="reveal">
     <div class="container center">
       <span class="kicker">Per chi si riconosce in questo</span>
-      <h2 class="title">Le persone arrivano da me<br>per un motivo preciso</h2>
+      <h2 class="title">Le persone arrivano da me <br>per un motivo preciso</h2>
 
       <div class="card" style="max-width:600px; margin:0 auto 20px; text-align:left;">
         <h3 style="font-family:'Cormorant Garamond', serif; font-size:1.4rem; margin-bottom:10px; color:var(--text-light);">Di cosa mi occupo oggi?</h3>
@@ -1156,7 +1178,7 @@
       <blockquote>"Il punto di partenza non lo scegli tu.<br>Quello di arrivo, <span class="accent">sì</span>."</blockquote>
       <div class="center">
         <span class="kicker">Cosa cambia davvero</span>
-        <h2 class="title">Da una vita a turni,<br>a una vita <span class="accent">scelta</span></h2>
+        <h2 class="title">Da una vita a turni, <br>a una vita <span class="accent">scelta</span></h2>
       </div>
       <div class="before-after">
         <div class="col before">
@@ -1184,7 +1206,7 @@
     <div class="container">
       <div class="center">
         <span class="kicker">Attenzione: non è per tutti</span>
-        <h2 class="title">È una <span class="accent">selezione</span>,<br>non un corso aperto a tutti</h2>
+        <h2 class="title">È una <span class="accent">selezione</span>, <br>non un corso aperto a tutti</h2>
       </div>
       <div class="selection-box">
         <ul class="check-x-list yes">
@@ -1255,7 +1277,7 @@
     <div class="container">
       <div class="center">
         <span class="kicker">Come funziona</span>
-        <h2 class="title">Quattro passi,<br>semplici e chiari</h2>
+        <h2 class="title">Quattro passi, <br>semplici e chiari</h2>
       </div>
       <div class="steps-grid">
         <div class="step-item">
@@ -1295,7 +1317,7 @@
     <div class="container">
       <div class="center">
         <span class="kicker">Domande frequenti</span>
-        <h2 class="title">Prima di candidarti,<br>rispondo alle domande più comuni</h2>
+        <h2 class="title">Prima di candidarti, <br>rispondo alle domande più comuni</h2>
       </div>
       <div class="faq-list">
         <details class="faq-item" open>
@@ -1335,7 +1357,7 @@
   <section class="final-cta reveal" id="form">
     <div class="container">
       <span class="kicker">Il primo passo</span>
-      <h2 class="title">Perché hai lavorato così tanto,<br>per guadagnarci <span class="accent">così poco?</span></h2>
+      <h2 class="title">Perché hai lavorato così tanto, <br>per guadagnarci <span class="accent">così poco?</span></h2>
       <p class="sub">Candidati per una call gratuita di 15 minuti: parliamo della tua situazione e capiamo insieme se <strong>questo percorso fa per te</strong>.</p>
       <div class="card">
         <form class="lead-form" id="lead-form">
