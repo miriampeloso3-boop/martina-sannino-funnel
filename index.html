@@ -99,6 +99,11 @@
     padding:26px 0;
     text-align:center;
   }
+  .nav-brand{ display:inline-flex; flex-direction:column; align-items:center; gap:6px; }
+  .nav-brand-name{ font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:500; font-size:2rem; line-height:1; color:#fff; letter-spacing:0.3px; }
+  .nav-brand-line{ width:30px; height:1px; background:rgba(240,198,116,0.7); }
+  .nav-brand-sub{ font-family:'Cormorant Garamond', serif; font-weight:600; font-size:0.66rem; letter-spacing:4px; text-transform:uppercase; color:#f0c674; }
+  @media(max-width:640px){ .nav-brand-name{ font-size:1.7rem; } }
   .nav-logo{
     height:62px;
     width:auto;
@@ -1025,7 +1030,7 @@
 
   <div class="bg-motion"></div>
 
-  <div class="nav"><img src="/martina-logo-dark.png" alt="Martina Sannino" class="nav-logo" onerror="this.replaceWith(document.createTextNode('Martina Sannino'))"></div>
+  <div class="nav"><div class="nav-brand"><span class="nav-brand-name">Martina Sannino</span><span class="nav-brand-line"></span><span class="nav-brand-sub">Metodo delle 3 Libertà</span></div></div>
 
   <!-- HERO -->
   <section class="hero">
@@ -1036,7 +1041,7 @@
       </div>
 
       <div class="hero-video-frame">
-        <video class="hero-video" poster="/martina-editorial.jpeg" controls playsinline preload="metadata">
+        <video class="hero-video" poster="/martina-hero-poster.jpg" controls playsinline preload="metadata">
           <source src="/martina-hero-video.mp4" type="video/mp4">
         </video>
       </div>
