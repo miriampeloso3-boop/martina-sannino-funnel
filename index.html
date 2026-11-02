@@ -1043,7 +1043,15 @@
     .pillar ul{ margin-top:10px; }
     .pillar ul li{ font-size:0.92rem; line-height:1.4; margin-bottom:6px; padding-left:20px; }
     .pillar ul li:last-child{ margin-bottom:0; }
-  }</style>
+  }
+  /* Pulsante candidatura sotto il video: lampeggia con alone luminoso */
+  @keyframes ctaBlink{
+    0%,100%{ box-shadow:0 16px 34px rgba(0,0,0,0.3), 0 0 0 0 rgba(240,198,116,0.8); transform:scale(1); filter:brightness(1); }
+    50%{ box-shadow:0 16px 34px rgba(0,0,0,0.3), 0 0 0 18px rgba(240,198,116,0); transform:scale(1.05); filter:brightness(1.14); }
+  }
+  .cta-blink{ animation:ctaBlink 1.6s ease-in-out infinite; }
+  .cta-blink:hover{ animation-play-state:paused; }
+  @media(prefers-reduced-motion:reduce){ .cta-blink{ animation:none; } }</style>
 </head>
 <body>
 
@@ -1065,13 +1073,16 @@
         </video>
       </div>
 
+      <div class="hero-cta">
+        <a href="#form" class="cta-btn cta-blink">Voglio fare il primo passo</a>
+        <span class="cta-sub">Candidatura gratuita — rispondo personalmente a ognuna</span>
+      </div>
+
       <div class="hero-text-top">
         <p class="lead">Non volevo pi&ugrave; scegliere tra <strong>uno stipendio</strong> e <strong>mio figlio</strong>.<br>Oggi <strong>non chiedo pi&ugrave; il permesso</strong> per vivere la mia vita. Guarda il video, te lo racconto io.</p>
       </div>
 
       <div class="hero-cta">
-        <a href="#form" class="cta-btn">Voglio fare il primo passo</a>
-        <span class="cta-sub">Candidatura gratuita — rispondo personalmente a ognuna</span>
         <div class="trust-bar">
           <div class="trust-item"><span class="trust-icon">✓</span> Rispondo io, di persona, a ogni candidatura — non un bot, non un team</div>
           <div class="trust-item"><span class="trust-icon">✓</span> Nessuna promessa di guadagno garantito: solo un metodo reale, passo dopo passo</div>
@@ -1169,55 +1180,6 @@
     </div>
   </section>
 
-  <!-- RECENSIONI -->
-  <section class="reveal reviews-section">
-    <div class="container">
-      <div class="center">
-        <span class="kicker">Chi ha già iniziato</span>
-        <h2 class="title">Le loro parole</h2>
-      </div>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p class="review-quote">"Prima di conoscerti avevo tante cose per la testa, ma tu mi hai fatto avere una visione diversa su tante cose. Da quando lavoro con te è cambiato il mio modo di affrontare le cose, grazie ai tuoi consigli e alla tua energia. A una persona che oggi si trova dove ero io, consiglierei sicuramente di parlare con te."</p>
-          <div class="review-author">
-            <img src="/recensione-giuseppe.jpeg" alt="Giuseppe Lo Presti" width="52" height="52" loading="lazy">
-            <p class="review-name">Giuseppe Lo Presti</p>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p class="review-quote">"C'è sempre stata empatia dal primo momento che ci siamo incontrate. Confrontarmi con te mi aiuta a crescere sia a livello personale che professionale: sai come aiutare e allo stesso tempo spronare. A chi si trova dove ero io direi che è in buone mani, che deve credere in sé stessa e affidarsi."</p>
-          <div class="review-author">
-            <img src="/recensione-erika.jpeg" alt="Erika Dominici" width="52" height="52" loading="lazy">
-            <p class="review-name">Erika Dominici</p>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p class="review-quote">"Prima di conoscerti ero una persona chiusa. Da quando ti seguo ho notato un cambiamento radicale in te, e tutto quello che impari cerchi di trasmetterlo agli altri. Mi hai migliorata in tanti aspetti: dove un tempo avrei reagito piangendo e chiudendomi a riccio, tu mi hai spronata. Grazie."</p>
-          <div class="review-author">
-            <img src="/recensione-veronica.jpeg" alt="Veronica M." width="52" height="52" loading="lazy">
-            <p class="review-name">Veronica M.</p>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p class="review-quote">"Il cambiamento l'ho visto in te. Mesi fa eri una persona provata emotivamente, un castello di sabbia che si stava sgretolando lentamente. Oggi invece hai riacquistato luce, forza e determinazione: sorridi e guardi avanti con entusiasmo. Il tempo alla lunga risponde sempre, ma sta a noi trovare il modo per uscire da dove siamo — restare fermi non risolve nulla. Se posso dare un consiglio: provate una via nuova, perché quelle comuni ormai sono intasate."</p>
-          <div class="review-author">
-            <img src="/recensione-stefano.jpeg" alt="Stefano Torrini" width="52" height="52" loading="lazy">
-            <p class="review-name">Stefano Torrini</p>
-          </div>
-        </div>
-      </div>
-      <div class="reviews-nav" aria-label="Scorri le recensioni">
-        <button type="button" class="reviews-arrow" id="reviews-prev" aria-label="Recensione precedente">&#8592;</button>
-        <div class="reviews-dots" id="reviews-dots"></div>
-        <button type="button" class="reviews-arrow" id="reviews-next" aria-label="Recensione successiva">&#8594;</button>
-      </div>
-    </div>
-  </section>
-
   <!-- COME FUNZIONA -->
   <section class="reveal">
     <div class="container">
@@ -1287,6 +1249,55 @@
         <button type="button" class="reviews-arrow" id="faq-prev" aria-label="Domanda precedente">&#8592;</button>
         <div class="reviews-dots" id="faq-dots"></div>
         <button type="button" class="reviews-arrow" id="faq-next" aria-label="Domanda successiva">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENSIONI -->
+  <section class="reveal reviews-section">
+    <div class="container">
+      <div class="center">
+        <span class="kicker">Chi ha già iniziato</span>
+        <h2 class="title">Le loro parole</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-quote">"Prima di conoscerti avevo tante cose per la testa, ma tu mi hai fatto avere una visione diversa su tante cose. Da quando lavoro con te è cambiato il mio modo di affrontare le cose, grazie ai tuoi consigli e alla tua energia. A una persona che oggi si trova dove ero io, consiglierei sicuramente di parlare con te."</p>
+          <div class="review-author">
+            <img src="/recensione-giuseppe.jpeg" alt="Giuseppe Lo Presti" width="52" height="52" loading="lazy">
+            <p class="review-name">Giuseppe Lo Presti</p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-quote">"C'è sempre stata empatia dal primo momento che ci siamo incontrate. Confrontarmi con te mi aiuta a crescere sia a livello personale che professionale: sai come aiutare e allo stesso tempo spronare. A chi si trova dove ero io direi che è in buone mani, che deve credere in sé stessa e affidarsi."</p>
+          <div class="review-author">
+            <img src="/recensione-erika.jpeg" alt="Erika Dominici" width="52" height="52" loading="lazy">
+            <p class="review-name">Erika Dominici</p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-quote">"Prima di conoscerti ero una persona chiusa. Da quando ti seguo ho notato un cambiamento radicale in te, e tutto quello che impari cerchi di trasmetterlo agli altri. Mi hai migliorata in tanti aspetti: dove un tempo avrei reagito piangendo e chiudendomi a riccio, tu mi hai spronata. Grazie."</p>
+          <div class="review-author">
+            <img src="/recensione-veronica.jpeg" alt="Veronica M." width="52" height="52" loading="lazy">
+            <p class="review-name">Veronica M.</p>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-quote">"Il cambiamento l'ho visto in te. Mesi fa eri una persona provata emotivamente, un castello di sabbia che si stava sgretolando lentamente. Oggi invece hai riacquistato luce, forza e determinazione: sorridi e guardi avanti con entusiasmo. Il tempo alla lunga risponde sempre, ma sta a noi trovare il modo per uscire da dove siamo — restare fermi non risolve nulla. Se posso dare un consiglio: provate una via nuova, perché quelle comuni ormai sono intasate."</p>
+          <div class="review-author">
+            <img src="/recensione-stefano.jpeg" alt="Stefano Torrini" width="52" height="52" loading="lazy">
+            <p class="review-name">Stefano Torrini</p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-nav" aria-label="Scorri le recensioni">
+        <button type="button" class="reviews-arrow" id="reviews-prev" aria-label="Recensione precedente">&#8592;</button>
+        <div class="reviews-dots" id="reviews-dots"></div>
+        <button type="button" class="reviews-arrow" id="reviews-next" aria-label="Recensione successiva">&#8594;</button>
       </div>
     </div>
   </section>
