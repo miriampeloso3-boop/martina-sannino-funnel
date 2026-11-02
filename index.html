@@ -1024,7 +1024,26 @@
     .footer-links{ display:flex; flex-direction:column; gap:10px; align-items:center; margin-bottom:16px; }
     .footer-links .sep{ display:none; }
   }
-</style>
+
+  /* Metodo delle 3 Liberta: schede compatte da telefono (numero a sinistra, testo a destra) */
+  @media(max-width:640px){
+    .pillars{ gap:12px; margin-top:4px; }
+    .pillar{
+      display:grid;
+      grid-template-columns:42px 1fr;
+      column-gap:14px;
+      align-items:start;
+      text-align:left;
+      padding:22px 18px 16px;
+    }
+    .pillar .num{ grid-column:1; grid-row:1 / span 3; font-size:2.3rem; margin:0; line-height:1; }
+    .pillar h3, .pillar > p, .pillar ul{ grid-column:2; }
+    .pillar h3{ font-size:0.78rem; letter-spacing:1.8px; margin-bottom:6px; }
+    .pillar > p{ font-size:0.98rem; line-height:1.45; margin:0; }
+    .pillar ul{ margin-top:10px; }
+    .pillar ul li{ font-size:0.92rem; line-height:1.4; margin-bottom:6px; padding-left:20px; }
+    .pillar ul li:last-child{ margin-bottom:0; }
+  }</style>
 </head>
 <body>
 
